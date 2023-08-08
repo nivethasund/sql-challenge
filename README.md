@@ -23,4 +23,4 @@ In this assignment, I use my knowledge of SQL to analyze a set of given CSV file
 
 Of the given tables above, the drafted entity relationship diagram looks something like this,
 
-<img src = "https://github.com/nivethasund/sql-challenge/blob/main/EmployeeSQL/employees_er_diagram.png">
+<img src = "https://github.com/nivethasund/sql-challenge/blob/main/EmployeeSQL/employees_erd.png">
