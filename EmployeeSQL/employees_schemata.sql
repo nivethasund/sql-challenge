@@ -34,14 +34,14 @@ FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
 -- Creating the dept_emp table
 CREATE TABLE dept_emp (
 emp_no INT,
-dept_no VARCHAR(10) NOT NULL,
+dept_no VARCHAR(10) PRIMARY KEY,
 FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
 
 -- Creating the dept_manager table
 CREATE TABLE dept_manager (
-dept_no VARCHAR(10) NOT NULL,
+dept_no VARCHAR(10) PRIMARY KEY,
 emp_no INT,
 FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
@@ -49,7 +49,7 @@ FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 
 -- Creating the salaries table
 CREATE TABLE salaries (
-emp_no INT,
+emp_no INT PRIMARY KEY,
 salary BIGINT,
 FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
