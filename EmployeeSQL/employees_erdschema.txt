@@ -22,15 +22,15 @@ hire_date DATE
 
 dept_emp
 --
-emp_no INT FK >- employees.emp_no
+emp_no INT PK FK >- employees.emp_no
 dept_no VARCHAR(10) FK >- departments.dept_no
 
 dept_manager
 --
-dept_no VARCHAR(10) FK >- departments.dept_no
+dept_no VARCHAR(10) PK FK >- departments.dept_no
 emp_no INT FK - employees.emp_no
 
 salaries
 --
-emp_no INT FK - employees.emp_no
+emp_no INT PK FK - employees.emp_no
 salaries BIGINT
